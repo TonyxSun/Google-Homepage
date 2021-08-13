@@ -6,98 +6,63 @@
   <title></title>
 <!--   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link href="reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-  <style>
-    .container {
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      grid-template-areas: 
-      "header"
-      "content"
-      "footer";
-      height: 100vh;
-    }
-    header {
-      margin: 6px 6px 6px 6px;
-      padding: 0;
-      height: 48px;
-      display: flex;
-      background-color: rgb(165, 217, 241);
-      /* justify-content: center; */
-      align-items: center;
-      grid-area:header;
-      }
-    .item {
-      /* height: 100%; */
-      padding: 5px;
-    }
-    .item-about {
-      background-color: red;
-      margin-left: auto;
-      margin-right: 15px;
-    }
-    #centerpiece{
-      position: fixed;
-      left: 50%;
-      top: 258px;
-      transform: translate(-50%, 0%);
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      width: 30%;
-      padding: 10px;
-      border:1px solid rgb(165, 217, 241);
-
-      grid-area: content;
-      align-self: center;
-    }
-    form#search input{
-      /* width: 300%; */
-    }
-    footer {
-      margin: 0px 20px 10px 20px;
-      padding: 0;
-      height: 2em;
-      display: flex;
-      background-color: rgb(165, 217, 241);
-      /* justify-content: center; */
-      align-items: center;
-
-      grid-area: footer;
-      }
-  </style>
   <div class="container">
     <header>
-        <div class="item item-home"><a href="#">Home</a></div>
-        <div class="item item-news"><a href="#">News</a></div>
+      <nav class="leftnav header">
         <div class="item item-about"><a href="#">About</a></div>
+        <div class="item item-store"><a href="#">Store</a></div>
+      </nav>
+      <nav class="rightnav header">
+        <div class="item item-gmail"><a href="#">Gmail</a></div>
+        <div class="item item-images"><a href="#">Images</a></div>
+        <span class="material-icons menu-icon">
+          apps
+          </span>
+        <img src="images/conan.png" alt="user-profile-picture" class="pfp">
+      </nav>
     </header>
+
 
     <div id="centerpiece"> 
       <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
       <br>
       <br>
-      <form id="search">
-      <input type="text" id="inputbar" name="inputbar" size="60">
-      <label for="inputbar"></label> 
+
+      <form class="search">
+        <span class="material-icons md-20 search-icon">
+            search
+            </span>
+        <input type="text" id="inputbar" name="inputbar" size="65">
+        <label for="inputbar"></label> 
+        <img id="mic" src="images/google-microphone.png" alt="microphone acesss">
       </form>
-      <br>
-      <br>
+
       <form id="buttons">
         <button>Google Search</button>
         <button>I'm Feeling Lucky</button>
       </form>
+
     </div>
 
+
     <footer>
-      <div class="item item-home"><a href="#">Home</a></div>
-      <div class="item item-news"><a href="#">News</a></div>
-      <div class="item item-about"><a href="#">About</a></div>
+      <nav class="leftnav footer">
+        <div class="item item-advrt"><a href="#">Advertising</a></div>
+        <div class="item item-business"><a href="#">Business</a></div>
+        <div class="item item-search"><a href="#">How Search works</a></div>
+
+      </nav>
+      <nav class="rightnav footer">
+        <div class="item item-gmail"><a href="#">Privacy</a></div>
+        <div class="item item-terms"><a href="#">Terms</a></div>
+        <div class="item item-settings"><a href="#">Settings</a></div>
+      </nav>
     </footer>
     <script src="script.js"></script>
   </div>

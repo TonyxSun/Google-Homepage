@@ -1,0 +1,173 @@
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
+    height: 100vh;
+}
+header {
+    margin: 6px 6px 6px 6px;
+    padding: 0;
+    height: 48px;
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: 1fr 1fr;
+    grid-area:header;
+}
+
+a {
+    color: #404040;
+    font-style: normal;
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    text-decoration-line: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.leftnav {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-left: 15px;
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 15px;
+    margin-right: 10px;
+
+}
+
+.pfp {
+    width: 32px;
+    padding: 6px;
+}
+.item {
+    /* height: 100%; */
+    padding: 5px;
+}
+
+
+#centerpiece{
+    position: fixed;
+    left: 50%;
+    top: 21vh;
+    transform: translate(-50%, 0%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+
+    grid-area: content;
+    align-self: center;
+}
+
+.search {
+    display: flex;
+    position:relative;
+}
+
+#inputbar {
+    border-radius: 22px;
+    padding: 0px;
+    height: 44px;
+    border:1px solid #e2e5e8;
+}
+
+#inputbar:hover {
+    box-shadow: 1px 1px 2px #c5c6c7
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    color: #a5abaf;
+    }
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+
+.material-icons.md-20 { font-size: 20px; }
+.menu-icon {
+    color: #737373;
+}
+
+#mic {
+    position: absolute;
+    left: 490px;
+    top: 12px;
+    width: 24px;
+}
+
+#buttons {
+    padding: 18px 0px 0px 0px;
+    height: 58px
+}
+button {
+    background-color: #f2f2f2;
+    border:1px solid #f2f2f2;
+    padding: 0px 16px 0px 16px;
+    height: 36px;
+    margin: 11px 4px 11px 4px;
+    color: #6a6e72;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+    border:1px solid #aaaaaa;
+    color: #585858;
+
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    height: 47px;
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: 1fr 1fr;    
+    background-color: #f2f2f2;
+    color: #202020 !important; 
+    align-items: center;
+    grid-area: footer;
+}
+footer a {
+    color: #5f6367 !important; 
+}
+nav.footer.rightnav {
+    margin-right: 20px;
+}
