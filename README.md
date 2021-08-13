@@ -9,11 +9,13 @@ A Google Homepage clone made with HTML and CSS!
 * CSS grid & flexbox
 * CSS animations and effects
 * Developer tools usage
+* Planning code
 
 ### To Do's
 Perhaps in the future, I will come back and improve upon these:
 * JS support for pop ups
 * Make it functional (make the search field actually lead to Google!)
+* Responsive
 
 
 ## Visual Comparison

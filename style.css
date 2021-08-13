@@ -76,17 +76,22 @@ a:hover {
 .search {
     display: flex;
     position:relative;
+    border-radius: 22px;
+    border:1px solid #e2e5e8;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #inputbar {
-    border-radius: 22px;
-    padding: 0px;
     height: 44px;
-    border:1px solid #e2e5e8;
+    outline: none;
+    border-style: hidden;
+
 }
 
-#inputbar:hover {
-    box-shadow: 1px 1px 2px #c5c6c7
+.search:hover {
+    box-shadow: 1px 1px 2px #c5c6c7;
 }
 
 .material-icons {
@@ -116,9 +121,10 @@ a:hover {
     }
 
 .search-icon {
-    position: absolute;
-    left: 15px;
-    top: 12px;
+    width: 20px;
+    height: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 .material-icons.md-20 { font-size: 20px; }
@@ -128,10 +134,8 @@ a:hover {
 }
 
 #mic {
-    position: absolute;
-    left: 490px;
-    top: 12px;
     width: 24px;
+    padding-right: 12px;
 }
 
 #buttons {
